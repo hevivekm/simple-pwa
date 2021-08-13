@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
 
 <!-- Responsive -->
 <meta charset="utf-8">
@@ -12,6 +13,8 @@
 
 <!-- Title -->
 <title>PWA Tutorial</title>
+
+<link rel="canonical" href="https://hevivekm.github.io/simple-pwa/" />
 
 <!-- Meta Tags required for
 	Progressive Web App -->
@@ -48,7 +51,9 @@
 		try {
 		await navigator
 				.serviceWorker
-				.register('./serviceworker.js');
+				.register('/simple-pwa/serviceworker.js', {scope:'/simple-pwa/'}).then(() => {
+  console.log("Install succeeded with the default scope.");
+})
 		}
 		catch (e) {
 		console.log('SW registration failed');

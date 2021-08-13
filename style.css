@@ -1,0 +1,25 @@
+.container{
+    position:relative;
+    margin: auto;
+    height: 100vh;
+  }
+  
+  .vhcenter{
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    background: silver;
+    width: fit-content;
+    height: fit-content;
+    padding: 25px;
+  }
+
+  .board{
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+ html, body{
+ 
+ margin: 0; 
+}
